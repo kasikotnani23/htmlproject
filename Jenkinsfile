@@ -16,7 +16,7 @@ pipeline {
 
         stage('Plan Terraform Deployment') {
             steps {
-                sh 'terraform plan'
+                sh 'terraform fmt'
             }
         }
 
